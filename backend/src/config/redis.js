@@ -1,7 +1,7 @@
 import Redis from "ioredis";
-import dotenv from "dotenv";
+// import dotenv from "dotenv";
 
-dotenv.config();
+// dotenv.config();
 
 const redis = process.env.REDIS_URL
   ? new Redis(process.env.REDIS_URL)

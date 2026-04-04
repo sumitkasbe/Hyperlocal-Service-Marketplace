@@ -1,4 +1,4 @@
-// import "dotenv/config";
+// import "dotenv/config";   ← keep it commented out, Railway doesn't need it
 
 import { config } from "./src/config/index.js";
 import "./src/config/redis.js";
@@ -26,8 +26,3 @@ async function startServer() {
 }
 
 startServer();
-
-
-
-
-
