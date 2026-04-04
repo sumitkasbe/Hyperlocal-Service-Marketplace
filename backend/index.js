@@ -1,10 +1,5 @@
 // import "dotenv/config";   ← keep it commented out, Railway doesn't need it
 
-console.log("=== ENV DEBUG ===");
-console.log("DATABASE_URL:", process.env.DATABASE_URL);
-console.log("JWT_SECRET:", process.env.JWT_SECRET ? "SET" : "NOT SET");
-console.log("=================");
-
 import { config } from "./src/config/index.js";
 import "./src/config/redis.js";
 import app from "./src/app.js";
@@ -28,7 +23,7 @@ async function startServer() {
     console.error("DB connection failed", error);
     process.exit(1);
   }
-  
+
 }
 
 startServer();
