@@ -28,6 +28,7 @@ async function startServer() {
     console.error("DB connection failed", error);
     process.exit(1);
   }
+  
 }
 
 startServer();
