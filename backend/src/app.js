@@ -10,7 +10,6 @@ import paymentRoutes from "./routes/payment.routes.js";
 import serviceCategoriesRoutes from "./routes/service-categories.routes.js";
 import providerServicesRoutes from "./routes/provider-services.routes.js";
 import reviewRoutes from "./routes/reviews.routes.js";
-import { sendWhatsApp } from "./services/whatsapp.service.js";
 import path from "path";
 import { fileURLToPath } from "url";
 import cors from "cors";
