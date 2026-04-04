@@ -1,4 +1,5 @@
-import "dotenv/config";
+// import "dotenv/config";
+
 import { config } from "./src/config/index.js";
 import "./src/config/redis.js";
 import app from "./src/app.js";
