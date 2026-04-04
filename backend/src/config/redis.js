@@ -1,13 +1,14 @@
 import Redis from "ioredis";
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 
-// Load environment variables
 dotenv.config();
 
-const redis = new Redis({
-  host: process.env.REDIS_HOST || "redis", // docker service name
-  port: 6379,
-});
+const redis = process.env.REDIS_URL
+  ? new Redis(process.env.REDIS_URL)
+  : new Redis({
+      host: process.env.REDIS_HOST || "localhost",
+      port: 6379,
+    });
 
 redis.on("connect", () => {
   console.log("Redis connected");
